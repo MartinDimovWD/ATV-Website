@@ -233,6 +233,21 @@ section.expand {
 	.mobile-menu {
 		width: 18vw;
 	}
+	.nav-pills:hover > *,
+	.nav-pills:focus-within > * {
+		opacity: 0.4;
+		transition: opacity 0.4s ease;
+	}
+
+	.nav-pills:hover > *:hover,
+	.nav-pills:focus-within > *:focus {
+		opacity: 1;
+		transition: opacity 0.4s ease;
+	}
+	.video-link {
+		display: flex;
+		margin: 0px 10px 15px;
+	}
 	.btn {
 		position: absolute;
 		top: 1em;
@@ -711,7 +726,7 @@ section.expand {
 		display: none;
 	}
 	.nav-pills button li {
-		display: inline-block;
+		display: block;
 	}
 	.nav-pills.mobile-flexrow {
 		display: flex;
@@ -735,18 +750,45 @@ section.expand {
 	#flush-collapseTwo {
 		position: absolute;
 		background-color: black;
+		z-index: -100;
+		left: 0%;
+		width: 100%;
+		transition: 0s;
+	}
+	#flush-collapseTwo.show {
+		position: absolute;
+		background-color: black;
 		z-index: 100;
 		left: 0%;
 		width: 100%;
+		transition: 0s;
 	}
 	.video-link h2 {
 		font-size: 14px !important;
 		margin: 0;
 		padding: 0;
-		text-align: right;
+		text-align: left;
 	}
 	.video-link span {
 		display: none;
+	}
+	.video-link {
+		display: flex;
+		margin: 10px 0px;
+	}
+}
+
+@media (max-width: 400px) {
+	.showreel-gallery .showreel-img {
+		object-fit: cover;
+		position: relative;
+		width: 80px;
+		height: 100px;
+		margin: 10px 20px;
+		background-color: rgb(114, 114, 114);
+	}
+	.tab-pane {
+		margin-left: 0;
 	}
 }
 
@@ -901,10 +943,6 @@ li:hover {
 	cursor: pointer;
 } */
 
-.video-link {
-	display: flex;
-	margin: 0px 10px 15px;
-}
 .video-link h2 {
 	font-size: 20px;
 	display: block;
@@ -917,18 +955,6 @@ li:hover {
 	padding-top: 15px;
 	padding-left: 30px;
 	font-size: 16px;
-}
-
-.nav-pills:hover > *,
-.nav-pills:focus-within > * {
-	opacity: 0.4;
-	transition: opacity 0.4s ease;
-}
-
-.nav-pills:hover > *:hover,
-.nav-pills:focus-within > *:focus {
-	opacity: 1;
-	transition: opacity 0.4s ease;
 }
 
 .d-flex button {

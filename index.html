@@ -943,9 +943,36 @@
         //     $(".menu-links").removeClass("active, clicked");
         //     $(this).addClass("active, clicked");
         // });
-        $('.accordion-item button.nav-link').click(function () {
-            $("#flush-collapseTwo").toggleClass("show");
+
+
+        // $('.accordion-item button.nav-link').click(function () {
+        //     $("#flush-collapseTwo").toggleClass("show");
+        // });
+
+        $(function () {
+            $('.accordion-item button.nav-link').on("click", function (e) {
+                $("#flush-collapseTwo").toggleClass("show");
+            });
+            $(document).on("click", function (e) {
+                if ($(e.target).is("#flush-collapseTwo, .accordion-item button.nav-link") === false) {
+                    $("#flush-collapseTwo").removeClass("show");
+                }
+            });
         });
+
+
+
+        // $('.accordion-item button.nav-link').click(function () {
+        //     $("#flush-collapseTwo").addClass('show');
+        // });
+
+        // $("#flush-collapseTwo").mouseleave(function () {
+        //     $("#flush-collapseTwo").removeClass('show');
+        // });
+        // $("#flush-collapseTwo").click(function () {
+        //     $("#flush-collapseTwo").removeClass('show');
+        // });
+
 
 
 
