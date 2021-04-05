@@ -176,9 +176,9 @@
                                         aria-controls="v-pills-1st" aria-selected="true">
                                         <li class="video-link comm">
 
-                                            <h2>SHOWREEL</h2>&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg"
-                                                width="25" height="25" fill="currentColor"
-                                                class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
+                                            <h2>SHOWREEL</h2><span>&nbsp;&nbsp;&nbsp;</span><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
                                                 <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                                 <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                                                 <path
@@ -191,7 +191,7 @@
                                         aria-controls="v-pills-bts" aria-selected="false">
                                         <li class="video-link comm">
 
-                                            <h2>Behind The Scenes</h2>&nbsp;&nbsp;&nbsp;<svg
+                                            <h2>Behind The Scenes</h2><span>&nbsp;&nbsp;&nbsp;</span><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
                                                 <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
@@ -200,7 +200,7 @@
                                             </svg>
                                         </li>
                                     </button>
-                                    <div class="accordion-item open " flex-column nav-pills me-3 col-lg-3"
+                                    <div class="accordion-item open nav-link" flex-column nav-pills me-3 col-lg-3"
                                         id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                         <h2 class="accordion-header" id="flush-headingTwo">
                                             <button class="accordion-button collapsed" type="button"
@@ -208,7 +208,7 @@
                                                 aria-expanded="true" aria-controls="flush-collapseTwo"
                                                 id='btn-change-bg2'>
                                                 <li class='video-link comm'>
-                                                    <h2>Videos</h2>&nbsp;&nbsp;&nbsp;<svg
+                                                    <h2>Videos</h2><span>&nbsp;&nbsp;&nbsp;</span><svg
                                                         xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                         fill="currentColor" class="bi bi-collection-play-fill"
                                                         viewBox="0 0 16 16">
@@ -221,17 +221,17 @@
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                             aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body nav">
-                                                <button class="nav-link" id="v-pills-3-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-3" type="button" role="tab"
-                                                    aria-controls="v-pills-3" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-3-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button"
+                                                    role="tab" aria-controls="v-pills-3" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>Venata x Nikicha1 x Lil Tapi God - Finesse</h2>
                                                     </li>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-4-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-4" type="button" role="tab"
-                                                    aria-controls="v-pills-4" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-4-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-4" type="button"
+                                                    role="tab" aria-controls="v-pills-4" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>100y400 x BROS - Dobre Li Shte Mi E</h2>
@@ -943,9 +943,10 @@
         //     $(".menu-links").removeClass("active, clicked");
         //     $(this).addClass("active, clicked");
         // });
-        $('.accordion-item button.nav-link, .nav-link').click(function () {
+        $('.accordion-item button.nav-link').click(function () {
             $("#flush-collapseTwo").toggleClass("show");
         });
+
 
 
 
