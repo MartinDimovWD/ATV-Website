@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: Fjalla One;
+	font-family: Fjalla One, Days One, PT Sans Narrow, Fira Sans Extra Condensed;
 	/* font-family: Bebas Neue; */
 	/* bebas neue */
 	color: white;
@@ -283,6 +283,14 @@ section.expand {
 		position: absolute !important;
 	} */
 	}
+	.card-title {
+		/* margin-top: 0px; */
+		/* width: 100%; */
+		display: block;
+		/* padding-top: 25px; */
+		text-align: center;
+		font-size: 53px;
+	}
 	.d-flex {
 		display: flex;
 		flex-direction: row-reverse;
@@ -315,6 +323,20 @@ section.expand {
 		align-items: center;
 		height: 100%;
 		overflow: auto;
+	}
+	#services-text {
+		border-left: .5px solid rgba(189, 189, 189, .5);
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+		width: 50%;
+		text-align: left;
+		font-size: 22px;
+		line-height: 30px;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+	#services-text p {
+		margin-top: 20px;
 	}
 	.profile-pic:hover .profile-card {
 		animation-direction: alternate;
@@ -489,7 +511,21 @@ section.expand {
 		width: 100vw;
 	}
 	#services-text {
-		width: 80% !important;
+		border-left: .5px solid rgba(189, 189, 189, .5);
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		text-align: left;
+		font-size: 15px;
+		line-height: 20px;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+	#services-text p {
+		padding: 10px 35px;
+	}
+	#services-text h2 {
+		text-align: center;
+		padding: 5px 15px;
 	}
 	main {
 		position: relative;
@@ -607,6 +643,9 @@ section.expand {
 	.carousel-inner {
 		overflow-y: auto;
 	}
+	.card-title {
+		font-size: 40px;
+	}
 	.showreel-gallery {
 		display: flex;
 		justify-content: space-around;
@@ -717,7 +756,10 @@ section.expand {
 	.nav-link {
 		display: inline !important;
 	}
-
+	.video-link {
+		display: block;
+		width: 100%;
+	}
 	.comm {
 		margin: 0;
 		text-align: center;
@@ -782,6 +824,17 @@ section.expand {
 }
 
 @media (max-width: 1372px) and (min-width: 801px) {
+	#services-text {
+		border-left: .5px solid rgba(189, 189, 189, .5);
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+		width: 50%;
+		text-align: left;
+		font-size: 15px;
+		line-height: 30px;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
 	.logo-anim {
 		height: 160px;
 		position: relative;
@@ -1008,7 +1061,6 @@ section.expand {
 	background-color: rgba(0, 0, 0, 0.85);
 }
 .services-page {
-	background-color: lightblue;
 }
 .services-page img {
 	position: relative;
@@ -1029,16 +1081,6 @@ section.expand {
 	/* box-shadow: 0 5px 45px rgba(246, 246, 247, 0.5); */
 	display: flex;
 	justify-content: flex-end;
-}
-
-#services-text {
-	border-left: .5px solid rgba(189, 189, 189, .5);
-	display: flex;
-	flex-direction: column;
-	width: 40%;
-	text-align: left;
-	font-size: 16px;
-	background-color: rgba(0, 0, 0, 0.65);
 }
 
 .accordion button,
@@ -1283,15 +1325,6 @@ textarea {
 
 .carousel-item-header h2 {
 	display: inline;
-}
-
-.card-title {
-	/* margin-top: 0px; */
-	/* width: 100%; */
-	display: block;
-	/* padding-top: 25px; */
-	text-align: center;
-	font-size: 53px;
 }
 
 .description-button:focus-within {
