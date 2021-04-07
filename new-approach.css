@@ -46,6 +46,42 @@ nav {
 	left: 0px;
 }
 
+/* .navbar-bg {
+	content: '';
+	background-image: url('grafiti1.jpg');
+	opacity: 0.2;
+	position: absolute;
+	object-fit: cover;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 0;
+}
+.portfolio-bg {
+	content: '';
+	background-image: url('grafiti3.jpg');
+	opacity: 0.2;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	object-fit: fill;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+}
+.contacts-bg {
+	content: '';
+	background-image: url('grafiti2.jpg');
+	opacity: 0.1;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	object-fit: fill;
+	bottom: 0;
+	left: 0;
+	z-index: -20;
+} */
 .navbar-items {
 	position: relative;
 	display: flex;
@@ -449,6 +485,7 @@ section.expand {
 		overflow: auto;
 		background-color: rgba(26, 24, 24, 0.5);
 	}
+
 	.flex-column {
 		height: 85%;
 	}
@@ -510,21 +547,22 @@ section.expand {
 	section {
 		width: 100vw;
 	}
+
 	#services-text {
 		border-left: .5px solid rgba(189, 189, 189, .5);
 		display: flex;
 		flex-direction: column;
-		width: 80%;
+		width: 85%;
 		text-align: left;
 		font-size: 15px;
 		line-height: 20px;
 		background-color: rgba(0, 0, 0, 0.65);
 	}
 	#services-text p {
-		padding: 10px 35px;
+		padding: 10px 20px;
 	}
 	#services-text h2 {
-		text-align: center;
+		text-align: left;
 		padding: 5px 15px;
 	}
 	main {
@@ -535,7 +573,7 @@ section.expand {
 	}
 
 	.logo-button {
-		height: 100px;
+		height: 100%;
 	}
 	.btn {
 		height: 15vh;
@@ -554,6 +592,13 @@ section.expand {
 	}
 
 	nav.hide-up {
+	}
+	.brand h1 {
+		font-size: 50px;
+	}
+	.navbar-items .menu .menu-links {
+		font-size: 39px;
+		margin: 15px 0px;
 	}
 	/* .d-flex {
 		display: flex;
@@ -801,12 +846,18 @@ section.expand {
 		transition: 0s;
 	}
 	#flush-collapseTwo.show {
+		border-top: 1.4px solid white;
+		border-bottom: 2px solid white;
 		position: absolute;
 		background-color: black;
 		z-index: 100;
 		left: 0%;
 		width: 100%;
 		transition: 0s;
+	}
+	#flush-collapseTwo .accordion-body button {
+		padding-left: 10px;
+		width: 100%;
 	}
 	.video-link h2 {
 		font-size: 14px !important;
