@@ -85,10 +85,12 @@
 
                                 </a>
                             </li>
-                            <li class='menu-links' data-list='tab_2'><a href="#services">Services</a></li>
-                            <li class='menu-links' data-list='tab_3'> <a href="#team">Team</a></li>
+                            <li class='menu-links mobile-menu-links' data-list='tab_2'><a href="#services">Services</a>
+                            </li>
+                            <li class='menu-links mobile-menu-links' data-list='tab_3'> <a href="#team">Team</a></li>
                             <!-- <li class='menu-links'> <a href="#gallery">Gallery</a></li> -->
-                            <li class='menu-links' data-list='tab_4'><a href="#contacts">Contact us</a></li>
+                            <li class='menu-links mobile-menu-links' data-list='tab_4'><a href="#contacts">Contact
+                                    us</a></li>
                         </ul>
 
                         <div class="social">
@@ -144,7 +146,7 @@
             <div class="portfolio-bg"></div>
 
             <div class="cards">
-                <div id="carouselExampleIndicators" class="carousel slide overflow-auto" data-bs-interval="false"
+                <div id="carouselExampleIndicators" class="carousel slide" overflow-auto data-bs-interval="false"
                     data-bs-ride="carousel">
 
                     <div class="carousel-inner">
@@ -176,7 +178,7 @@
 
                                 <div class="nav flex-column nav-pills me-3 col-lg-3 mobile-flexrow" id="v-pills-tab"
                                     role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active" id="v-pills-1st-tab" data-bs-toggle="pill"
+                                    <button class="nav-link" id="v-pills-1st-tab" data-bs-toggle="pill"
                                         data-bs-target="#v-pills-1st" type="button" role="tab"
                                         aria-controls="v-pills-1st" aria-selected="true">
                                         <li class="video-link comm">
@@ -205,26 +207,27 @@
                                             </svg>
                                         </li>
                                     </button>
-                                    <div class="accordion-item open nav-link flex-column nav-pills me-3 col-lg-3"
+                                    <div class="accordion-item open nav-link" flex-column nav-pills me-3 col-lg-3"
                                         id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" id='videos-dropdown-button'
-                                                type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseTwo" aria-expanded="true"
-                                                aria-controls="flush-collapseTwo" id='btn-change-bg2'>
-                                                <li class='video-link comm'>
-                                                    <h2>Videos</h2><span>&nbsp;&nbsp;&nbsp;</span><svg
-                                                        xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                        fill="currentColor" class="bi bi-collection-play-fill"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z" />
-                                                    </svg>
-                                                </li>
-                                            </button>
-                                        </h2>
+
+                                        <button class="accordion-button collapsed " id='videos-dropdown-button'
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo" id='btn-change-bg2'>
+                                            <h2 class="accordion-header" id="flush-headingTwo"></h2>
+                                            <li class='video-link comm'>
+                                                <h2>Videos</h2><span>&nbsp;&nbsp;&nbsp;</span><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-collection-play-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z" />
+                                                </svg>
+                                            </li>
+                                            </h2>
+                                        </button>
+
                                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#v-pills-tab">
                                             <div class="accordion-body nav">
                                                 <button class="nav-link nav-pill" id="v-pills-3-tab"
                                                     data-bs-toggle="pill" data-bs-target="#v-pills-3" type="button"
@@ -241,65 +244,65 @@
 
                                                         <h2>100y400 x BROS - Dobre Li Shte Mi E</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-5-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-5" type="button" role="tab"
-                                                    aria-controls="v-pills-5" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-5-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button"
+                                                    role="tab" aria-controls="v-pills-5" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>Gesh x MDZ - COMMA$ (Prod. by VICHEV)</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-6-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-6" type="button" role="tab"
-                                                    aria-controls="v-pills-6" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-6-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button"
+                                                    role="tab" aria-controls="v-pills-6" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>Homelesz - BG Modela</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-7-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-7" type="button" role="tab"
-                                                    aria-controls="v-pills-7" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-7-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-7" type="button"
+                                                    role="tab" aria-controls="v-pills-7" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>NEWAVE x Simon x Siimbad - Papaya</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-8-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-8" type="button" role="tab"
-                                                    aria-controls="v-pills-8" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-8-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-8" type="button"
+                                                    role="tab" aria-controls="v-pills-8" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>V:RGO x TLay - OPRAI SA</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-9-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-9" type="button" role="tab"
-                                                    aria-controls="v-pills-9" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-9-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-9" type="button"
+                                                    role="tab" aria-controls="v-pills-9" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>Kita & Bobkata - Santana</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-10-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-10" type="button" role="tab"
-                                                    aria-controls="v-pills-10" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-10-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-10" type="button"
+                                                    role="tab" aria-controls="v-pills-10" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>HOMELESZ - Riddim - C3</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-11-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-11" type="button" role="tab"
-                                                    aria-controls="v-pills-11" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-11-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-11" type="button"
+                                                    role="tab" aria-controls="v-pills-11" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>Bobkata & Chibook - Davai Riddim</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-12-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-12" type="button" role="tab"
-                                                    aria-controls="v-pills-12" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-12-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-12" type="button"
+                                                    role="tab" aria-controls="v-pills-12" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>Kita & Bobkata - Santana</h2>
                                                 </button>
-                                                <button class="nav-link" id="v-pills-13-tab" data-bs-toggle="pill"
-                                                    data-bs-target="#v-pills-13" type="button" role="tab"
-                                                    aria-controls="v-pills-13" aria-selected="false">
+                                                <button class="nav-link nav-pill" id="v-pills-13-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-13" type="button"
+                                                    role="tab" aria-controls="v-pills-13" aria-selected="false">
                                                     <li class="video-link comm">
 
                                                         <h2>HOMELESZ - Riddim - C3</h2>
@@ -408,12 +411,15 @@
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-4" role="tabpanel"
                                         aria-labelledby="v-pills-4-tab">
+
                                         <div class="video-iframe">
                                             <iframe src="https://player.vimeo.com/video/266082667" frameborder="0"
                                                 allow="autoplay; fullscreen; picture-in-picture"
                                                 allowfullscreen></iframe>
                                         </div>
                                         <p>See Description</p>
+
+
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-5" role="tabpanel"
                                         aria-labelledby="v-pills-5-tab">
@@ -775,7 +781,6 @@
                                 <div class="img-wrapper">
                                     <a href="g2.JPG"><img src="g2.JPG" class="img-responsive"></a>
                                     <div class="img-overlay">
-
                                     </div>
                                 </div>
                             </div>
@@ -783,7 +788,6 @@
                                 <div class="img-wrapper">
                                     <a href="g3.JPG"><img src="g3.JPG" class="img-responsive"></a>
                                     <div class="img-overlay">
-
                                     </div>
                                 </div>
                             </div>
@@ -916,6 +920,18 @@
 
 
     <script>
+        $('#portfolio-list').click(function () {
+            $('.portfolio-dropdown').slideToggle('show');
+        });
+        $('.portfolio-dropdown').click(function () {
+            $('.portfolio-dropdown').slideToggle('show');
+        });
+
+        $('.accordion-body .nav-link').click(function () {
+            $('.nav-link').removeClass('active');
+        });
+
+
 
 
 
@@ -994,7 +1010,7 @@
 
 
 
-        $('.menu-links').click(function () {
+        $('.portfolio-dropdown, .mobile-menu-links').click(function () {
             $(".sidebar").addClass("hide-up");
         });
         $('.logo-button').click(function () {
@@ -1007,9 +1023,9 @@
             $('section').toggleClass('expand');
         });
 
-        $('nav ul li').click(function () {
-            $(this).addClass("active").siblings().removeClass("active");
-        });
+        // $('.sidebar nav ul li').click(function () {
+        //     $(this).addClass("active").siblings().removeClass("active");
+        // });
 
         // Gallery image hover
         $(".img-wrapper").hover(
