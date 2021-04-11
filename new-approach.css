@@ -184,13 +184,9 @@ a {
 #portfolio-drop {
 	/* position: static; */
 	display: none;
-	position: absolute;
-	z-index: 10000000;
 }
 #portfolio-drop.show-down {
 	display: block;
-	position: absolute;
-	z-index: 10000000;
 }
 .dropdown-links {
 	font-size: 18px;
