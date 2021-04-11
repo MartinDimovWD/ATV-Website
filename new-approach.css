@@ -1394,3 +1394,24 @@ textarea {
 	text-align: center;
 	border-bottom: 1px solid white;
 }
+
+.showreel-gallery svg {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.showreel-gallery a {
+	position: relative;
+}
+
+.showreel-gallery a:hover svg {
+	opacity: 1;
+	transition: opacity 0.4s ease;
+}
