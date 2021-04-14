@@ -1230,6 +1230,9 @@ li:hover {
 .nav-pill h2 {
 	font-size: 15px;
 }
+button.nav-link.nav-pill {
+	border-top: 0.1px solid white;
+}
 .video-link h3 {
 	font-size: 20px;
 	display: block;
