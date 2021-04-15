@@ -323,8 +323,8 @@
 
                                 </div>
 
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade" id="v-pills-bts" role="tabpanel"
+                                <div class="tab-content " id="v-pills-tabContent">
+                                    <div class="tab-pane fade " id="v-pills-bts" role="tabpanel"
                                         aria-labelledby="v-pills-bts-tab">
                                         <div class="showreel-gallery">
                                             <!-- <div class="gallery-title">
@@ -582,7 +582,7 @@
                                                 responsive id='player-one' class='vimeo-video'></iframe>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-4" role="tabpanel"
+                                    <div class="tab-pane fade " id="v-pills-4" role="tabpanel"
                                         aria-labelledby="v-pills-4-tab">
 
                                         <div class="video-iframe">
@@ -593,7 +593,7 @@
                                                 id='player-dos'></iframe> -->
                                             <iframe src="https://player.vimeo.com/video/76979871" frameborder="0"
                                                 allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                                                responsive id='player-two' class='vimeo-video'></iframe>
+                                                id='player-two' class='vimeo-video'></iframe>
                                         </div>
                                         <p>See Description</p>
 
@@ -920,9 +920,9 @@
                 <div id="contact-form">
 
                     <h3>Get in touch with us</h3>
-                    <form action="contactform.php" method='POST'>
+                    <form action="contactform.php" method='POST' name='emailform'>
                         <input type="text" name='name' placeholder='Name' required><br>
-                        <input type="email" name='email' placeholder='E-mail' required><br>
+                        <input type="text" name='email' placeholder='E-mail' required><br>
                         <textarea name="message" id="" cols="30" rows="10" placeholder='Your text here'
                             required></textarea>
                         <button type='submit' name='submit'>Send message</button>

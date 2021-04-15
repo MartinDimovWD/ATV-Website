@@ -479,7 +479,7 @@ section.expand {
 		position: relative;
 		padding-top: 56.25%;
 		overflow: auto;
-		width: 800px;
+		width: 55vw;
 		height: 400px;
 	}
 
@@ -793,7 +793,7 @@ section.expand {
 		margin-top: 0px;
 	}
 	#contacts {
-		overflow: auto !important;
+		/* overflow: auto !important; */
 	}
 	#contact-form {
 		width: 90%;
@@ -802,6 +802,7 @@ section.expand {
 	.d-flex {
 		display: flex;
 		flex-direction: column;
+		height: auto;
 	}
 	.mobile-flexrow {
 		display: flex;
@@ -891,7 +892,7 @@ section.expand {
 		padding: 25px;
 		width: 50%;
 		text-align: left;
-		font-size: 15px;
+		font-size: 17px;
 		line-height: 30px;
 		background-color: rgba(0, 0, 0, 0.65);
 	}
@@ -932,6 +933,15 @@ section.expand {
 		height: 100%;
 		/* overflow: auto; */
 	}
+	.brand h1 {
+		font-size: 26px;
+	}
+	.logo-anim {
+		height: 130px !important;
+	}
+	.menu-links {
+		font-size: 30px !important;
+	}
 	.tab-content video {
 		width: 100%;
 		height: auto;
@@ -963,7 +973,7 @@ section.expand {
 		position: relative;
 		padding-top: 56.25%;
 		overflow: hidden;
-		width: 90vw;
+		width: 80vw;
 		height: 100%;
 	}
 
@@ -1003,8 +1013,12 @@ section.expand {
 	.nav-link {
 		margin: 0;
 		padding: 0;
-		display: flex;
+		display: inline;
 		/* width: 100%; */
+	}
+	.carousel-inner {
+		height: 100vh;
+		overflow-y: auto !important;
 	}
 	.accordion-button {
 		padding: 0;
@@ -1019,15 +1033,17 @@ section.expand {
 		z-index: -100;
 		left: 0%;
 		width: 100%;
-		transition: 0s;
+		transition: 0.001s;
 	}
 	#flush-collapseTwo.show {
+		border-top: 1.4px solid white;
+		border-bottom: 2px solid white;
 		position: absolute;
 		background-color: black;
 		z-index: 100;
 		left: 0%;
 		width: 100%;
-		transition: 0s;
+		transition: 0.001s;
 	}
 	.video-link h2 {
 		font-size: 14px !important;
@@ -1067,6 +1083,11 @@ section.expand {
 	.showreel-gallery .showreel-img:hover {
 		opacity: 0.5;
 		transition: opacity 0.3s ease;
+	}
+	.profile-pic:hover .profile-card {
+		animation-direction: alternate;
+		transform: translatey(-100%);
+		transition: all .5s ease-in-out;
 	}
 }
 @media (max-width: 400px) {
@@ -1231,7 +1252,8 @@ li:hover {
 	font-size: 15px;
 }
 button.nav-link.nav-pill {
-	border-top: 0.1px solid white;
+	display: block;
+	width: 100%;
 }
 .video-link h3 {
 	font-size: 20px;
@@ -1417,4 +1439,9 @@ textarea {
 .showreel-gallery a:hover svg {
 	opacity: 1;
 	transition: opacity 0.4s ease;
+}
+
+@media (max-width: 1400px) {
+	.tab-pane {
+	}
 }
