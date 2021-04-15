@@ -1441,7 +1441,36 @@ textarea {
 	transition: opacity 0.4s ease;
 }
 
-@media (max-width: 1400px) {
-	.tab-pane {
+@media (min-height: 850px) and (max-height: 1400px) {
+	.navbar-items .menu .menu-links {
+		font-size: 50px;
+		margin: 35px 0px;
+	}
+	.brand h1 {
+		font-size: 60px;
+	}
+	#contacts {
+		font-size: 26px;
+	}
+	#services-text {
+		border-left: .5px solid rgba(189, 189, 189, .5);
+		display: flex;
+		flex-direction: column;
+		padding: 25px;
+		width: 50%;
+		text-align: left;
+		font-size: 25px;
+		line-height: 30px;
+		background-color: rgba(0, 0, 0, 0.65);
+	}
+	.profile-card p {
+		font-size: 23px !important;
+		margin-top: 20px;
+	}
+	.profile-card h3 {
+		font-size: 35px !important;
+	}
+	.video-link h2 {
+		font-size: 30px !important;
 	}
 }
