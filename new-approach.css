@@ -507,7 +507,7 @@ section.expand {
 		padding: 5px 15px;
 	}
 	main {
-		position: fixed;
+		position: relative;
 		top: 15vh;
 		height: 85vh;
 		bottom: 0;
@@ -1361,5 +1361,13 @@ textarea {
 	}
 	.video-link h2 {
 		font-size: 30px !important;
+	}
+}
+
+@media (min-height: 500px) and (max-height: 850px) {
+	.profile-pic:hover .profile-card {
+		animation-direction: alternate;
+		transform: translatey(-80%);
+		transition: all .5s ease-in-out;
 	}
 }
