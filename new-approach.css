@@ -1367,7 +1367,7 @@ textarea {
 @media (min-height: 500px) and (max-height: 850px) {
 	.profile-pic:hover .profile-card {
 		animation-direction: alternate;
-		transform: translatey(-80%);
+		transform: translatey(-100%);
 		transition: all .5s ease-in-out;
 	}
 }
