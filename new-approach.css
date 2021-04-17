@@ -291,6 +291,9 @@ section.expand {
 		padding-left: 55px;
 		text-align: left;
 	}
+	.tab-content h3 {
+		padding-left: 35px;
+	}
 	.tab-pane {
 		margin-left: 40px;
 		display: flex;
